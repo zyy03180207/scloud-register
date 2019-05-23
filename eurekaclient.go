@@ -94,7 +94,7 @@ func Register(appName string, port string, securePort string, init bool) {
 	tpl = strings.Replace(tpl, "${securePort}", securePort, -1)
 	tpl = strings.Replace(tpl, "${instanceId}", instanceId, -1)
 	tpl = strings.Replace(tpl, "${appName}", appName, -1)
-	fmt.Println(tpl)
+	//fmt.Println(tpl)
 	// Register.
 	registerAction := HttpAction{
 		Url:         discoveryServerUrl + "/eureka/apps/" + appName,
